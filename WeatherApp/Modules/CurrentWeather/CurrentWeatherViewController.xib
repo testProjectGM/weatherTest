@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrentWeatherViewController" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="3dq-Kj-Pfc" id="4lx-hf-fcy"/>
+                <outlet property="collectionView" destination="U4C-oE-SFQ" id="IzY-4x-nf9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Zs5-Lq-ovH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="U4C-oE-SFQ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NEP-xo-5Fh">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="3dq-Kj-Pfc">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="3dq-Kj-Pfc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Yso-Yx-lcD"/>
+                <constraint firstItem="U4C-oE-SFQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dir-ff-Lo8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="U4C-oE-SFQ" secondAttribute="bottom" id="dvF-mF-eSR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="U4C-oE-SFQ" secondAttribute="trailing" id="jkm-xf-OIk"/>
+                <constraint firstItem="3dq-Kj-Pfc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kWN-S2-gj3"/>
+                <constraint firstItem="U4C-oE-SFQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zXt-nC-haw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="133" y="154"/>
+        </view>
+    </objects>
+</document>
